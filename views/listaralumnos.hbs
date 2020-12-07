@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Buenas noches</title>
+  </head>
+  <body>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+
+  <table class="table table-bordered table-sm">
+    <thead class="text-center">
+        <tr>
+          <td>Legajo </td><td>Nombre y Apellido </td><td>Domicilio </td><td>Codigo Postal</td><td>Tel Fijo </td><td>Tel Movil </td><td>Fecha Nacimiento </td><td>Email </td><td>Grupo Sanguineo </td><td>Dni </td>
+        </tr>
+        </div>
+      </thead>
+    {{#each alumnos}}
+      <tbody>
+        <tr>  
+          <td>{{leg_alumno}} </td> <td>{{apyn_alumno}}</td> <td>{{dom_alumno}}</td><td>{{cod_postal}}</td><td>{{tel_fijo_alumno}}</td><td>{{tel_movil_alumno}}</td><td>{{fecha_nac_alumno}}</td><td>{{email_alumno}}</td><td>{{grupo_sang_alumno}}</td><td>{{dni_alumno}}</td>
+        </tr>  
+      </tbody> 
+    {{/each}}
+  </table>
+
+  <a href="/" class="btn btn-danger">Retornar</a>
+
+  </body>
+</html>
+
+
