@@ -90,7 +90,7 @@ router.post('/modificar', function(req, res, next) {
 
 router.post('/confirmarmodifica', function(req, res, next) {
   var registro={
-        leg_alumno:req.body.leg_alumno,
+        leg_alumno:req.body.leg_alumno[1],
         apyn_alumno:req.body.apyn_alumno,
         dom_alumno:req.body.dom_alumno,
         cod_postal:req.body.cod_postal,
@@ -101,7 +101,7 @@ router.post('/confirmarmodifica', function(req, res, next) {
         tel_movil_alumno:req.body.tel_movil_alumno,
         dni_alumno:req.body.dni_alumno
       };    
-  bd.query('UPDATE alumnos SET ? WHERE ?',[registro,{leg_alumno:req.body.leg_alumno}], function(error,filas){
+  bd.query('UPDATE alumnos SET ? WHERE ?',[registro,{leg_alumno:req.body.leg_alumno[1]}], function(error,filas){
             if (error) {            
                 console.log('error en la consulta');
                 console.log(error);
